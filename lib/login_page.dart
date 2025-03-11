@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:learn_getx_nav/pages.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -14,7 +13,7 @@ class LoginPage extends StatelessWidget {
       body: Center(
         child: TextButton(
           onPressed: (){
-            Get.off(MainPage());
+            Get.offNamed('/main');
           },
           child: Text('LOGIN'),
         ),
